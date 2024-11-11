@@ -1,0 +1,69 @@
+html {
+    font-family: system-ui, arial;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    background-color: #e5e4e4;
+}
+
+.display {
+    margin-top: 2rem;
+    position: relative;
+}
+
+.template {
+    width: min(100%, 700px);
+    max-height: 0px;
+    overflow: hidden;
+    transition: .2s ease-in-out max-height;
+}
+
+.template::after {
+    content: '';
+    position: absolute;
+    background-image: url(/IMG_0324.PNG);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.5;
+    inset: 0;
+    z-index: -1;
+    width: min(100%, 700px);
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, p {
+    margin-top: 0;
+}
+
+p {
+    font-weight: bold;
+}
+
+.flex {
+    display: flex;
+    height: 100px;
+    gap: 80px;
+}
+
+.name {
+    align-self: flex-end;
+}
+
+.grow {
+    max-height: 800px;
+    padding: 1rem;
+}
+
+div {
+    font-weight: bold;
+}
+
+button {
+    cursor: pointer;
+}
